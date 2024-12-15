@@ -10,7 +10,7 @@ The **Library Management System** is a web-based application designed to facilit
 
 - **Book Management**: Add, update, and manage book details, including stock availability.
 - **Member Management**: Register new members and monitor their membership details.
-- **Checkout Management**: Track book borrowing and return operations with overdue notifications.
+- **Checkout Management**: Track book borrowing and return operations.
 - **Real-Time Stock Management**: Automatically adjust stock levels during checkouts and returns.
 
 ---
@@ -122,7 +122,6 @@ The application will now be accessible at `http://127.0.0.1:8000`.
 ### Checkout Management
 - Borrow books with automatic stock adjustment.
 - Return books and update stock.
-- Notify overdue members.
 
 ### Admin Dashboard
 - Monitor overall library operations from a centralized dashboard.
@@ -162,20 +161,4 @@ $ php artisan config:clear
 $ php artisan test
 ```
 
----
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes with clear messages.
-4. Submit a pull request.
-
----
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
