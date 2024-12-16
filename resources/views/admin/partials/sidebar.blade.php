@@ -23,12 +23,17 @@
         <span>Books</span>
     </a>
 
-    <a href="{{ route('profile.edit') }}" class="flex items-center space-x-3 text-gray-800 hover:text-gray-600 transition duration-150 ease-in-out {{ Request::is('checkout') ? 'bg-gray-300 rounded-lg p-2 -mx-2' : '' }}">
+    <a href="{{ route('checkout') }}" class="flex items-center space-x-3 text-gray-800 hover:text-gray-600 transition duration-150 ease-in-out {{ Request::is('checkout') ? 'bg-gray-300 rounded-lg p-2 -mx-2' : '' }}">
+        <i class="fa-solid fa-person-walking-luggage fa-lg"></i>
+        <span>Checkout</span>
+    </a>
+
+    <a href="{{ route('profile.edit') }}" class="flex items-center space-x-3 text-gray-800 hover:text-gray-600 transition duration-150 ease-in-out {{ Request::is('profile') ? 'bg-gray-300 rounded-lg p-2 -mx-2' : '' }}">
         <i class="fa-solid fa-gear fa-lg"></i>
         <span>Settings</span>
     </a>
 
-    <form action="{{ route('logout') }}" method="POST" class="flex items-center text-gray-800 hover:text-gray-600 transition duration-150 ease-in-out {{ Request::is('checkout') ? 'bg-gray-300 rounded-lg p-2 -mx-2' : '' }}">
+    <form action="{{ route('logout') }}" method="POST" class="flex items-center text-gray-800 hover:text-gray-600 transition duration-150 ease-in-out {{ Request::is('logout') ? 'bg-gray-300 rounded-lg p-2 -mx-2' : '' }}">
     @csrf
         <button type="submit" class="flex items-center space-x-3">
             <i class="fa-solid fa-right-from-bracket fa-lg"></i>
